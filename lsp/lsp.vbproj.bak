@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A997E0F1-88BF-4AFB-A330-80D998708A9C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>lsp.My.MyApplication</StartupObject>
+    <RootNamespace>lsp</RootNamespace>
+    <AssemblyName>lsp</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>lsp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>lsp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeRush.Common, Version=11.2.8.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.Core, Version=11.2.8.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.Library, Version=11.2.8.0, Culture=neutral, PublicKeyToken=e1a72e979dafdca7, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeRush.StructuralParser, Version=11.2.8.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.Data.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DXCore.Parser, Version=11.2.8.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.ExpressApp.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.Win.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Persistent.Base.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v11.2.Core, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v11.2.Core, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Oracle.DataAccess, Version=10.1.0.400, Culture=neutral, PublicKeyToken=89b483f429c47342">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\oracle\product\10.1.0\Client_1\bin\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\user.vb" />
+    <Compile Include="Class\modul_my.vb" />
+    <Compile Include="fuser.Designer.vb">
+      <DependentUpon>fuser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fuser.vb" />
+    <Compile Include="fuser_detail.Designer.vb">
+      <DependentUpon>fuser_detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fuser_detail.vb" />
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb" />
+    <Compile Include="ms_area.Designer.vb">
+      <DependentUpon>ms_area.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_area.vb" />
+    <Compile Include="ms_area2.Designer.vb">
+      <DependentUpon>ms_area2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_area2.vb" />
+    <Compile Include="ms_barang.Designer.vb">
+      <DependentUpon>ms_barang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_barang.vb" />
+    <Compile Include="ms_barang2.Designer.vb">
+      <DependentUpon>ms_barang2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_barang2.vb" />
+    <Compile Include="ms_kab.Designer.vb">
+      <DependentUpon>ms_kab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_kab.vb" />
+    <Compile Include="ms_kab2.Designer.vb">
+      <DependentUpon>ms_kab2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_kab2.vb" />
+    <Compile Include="ms_kas.Designer.vb">
+      <DependentUpon>ms_kas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_kas.vb" />
+    <Compile Include="ms_kas2.Designer.vb">
+      <DependentUpon>ms_kas2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_kas2.vb" />
+    <Compile Include="ms_kec.Designer.vb">
+      <DependentUpon>ms_kec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_kec.vb" />
+    <Compile Include="ms_kec2.Designer.vb">
+      <DependentUpon>ms_kec2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_kec2.vb" />
+    <Compile Include="ms_kend.Designer.vb">
+      <DependentUpon>ms_kend.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_kend.vb" />
+    <Compile Include="ms_kend2.Designer.vb">
+      <DependentUpon>ms_kend2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_kend2.vb" />
+    <Compile Include="ms_prc.Designer.vb">
+      <DependentUpon>ms_prc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_prc.vb" />
+    <Compile Include="ms_prc2.Designer.vb">
+      <DependentUpon>ms_prc2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_prc2.vb" />
+    <Compile Include="ms_prop.Designer.vb">
+      <DependentUpon>ms_prop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_prop.vb" />
+    <Compile Include="ms_prop2.Designer.vb">
+      <DependentUpon>ms_prop2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_prop2.vb" />
+    <Compile Include="ms_sales.Designer.vb">
+      <DependentUpon>ms_sales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_sales.vb" />
+    <Compile Include="ms_sales2.Designer.vb">
+      <DependentUpon>ms_sales2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_sales2.vb" />
+    <Compile Include="ms_supir2.Designer.vb">
+      <DependentUpon>ms_supir2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_supir2.vb" />
+    <Compile Include="ms_toko.Designer.vb">
+      <DependentUpon>ms_toko.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_toko.vb" />
+    <Compile Include="ms_toko2.Designer.vb">
+      <DependentUpon>ms_toko2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_toko2.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MDIParent1.Designer.vb">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MDIParent1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Class\classmy.vb" />
+    <Compile Include="rbah_pwd.Designer.vb">
+      <DependentUpon>rbah_pwd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rbah_pwd.vb" />
+    <Compile Include="utama.Designer.vb">
+      <DependentUpon>utama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="utama.vb" />
+    <Compile Include="waitf.Designer.vb">
+      <DependentUpon>waitf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="waitf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_supir.Designer.vb">
+      <DependentUpon>ms_supir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_supir.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="fuser.resx">
+      <DependentUpon>fuser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fuser_detail.resx">
+      <DependentUpon>fuser_detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_area.resx">
+      <DependentUpon>ms_area.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_area2.resx">
+      <DependentUpon>ms_area2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_barang.resx">
+      <DependentUpon>ms_barang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_barang2.resx">
+      <DependentUpon>ms_barang2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_kab.resx">
+      <DependentUpon>ms_kab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_kab2.resx">
+      <DependentUpon>ms_kab2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_kas.resx">
+      <DependentUpon>ms_kas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_kec.resx">
+      <DependentUpon>ms_kec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_kec2.resx">
+      <DependentUpon>ms_kec2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_kend.resx">
+      <DependentUpon>ms_kend.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_kend2.resx">
+      <DependentUpon>ms_kend2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_prc.resx">
+      <DependentUpon>ms_prc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_prc2.resx">
+      <DependentUpon>ms_prc2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_prop.resx">
+      <DependentUpon>ms_prop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_prop2.resx">
+      <DependentUpon>ms_prop2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_sales.resx">
+      <DependentUpon>ms_sales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_sales2.resx">
+      <DependentUpon>ms_sales2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_supir.resx">
+      <DependentUpon>ms_supir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_supir2.resx">
+      <DependentUpon>ms_supir2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_toko.resx">
+      <DependentUpon>ms_toko.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_toko2.resx">
+      <DependentUpon>ms_toko2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\MDIParent1.resx">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rbah_pwd.resx">
+      <DependentUpon>rbah_pwd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="utama.resx">
+      <DependentUpon>utama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="waitf.resx">
+      <DependentUpon>waitf.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

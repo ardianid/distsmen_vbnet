@@ -1,0 +1,1715 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A997E0F1-88BF-4AFB-A330-80D998708A9C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>lsp.My.MyApplication</StartupObject>
+    <RootNamespace>lsp</RootNamespace>
+    <AssemblyName>lsp</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>lsp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>lsp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>XpoTutorials.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.BonusSkins.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeRush.Common, Version=11.2.8.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.Core, Version=11.2.8.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.Library, Version=11.2.8.0, Culture=neutral, PublicKeyToken=e1a72e979dafdca7, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeRush.StructuralParser, Version=11.2.8.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.Data.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DXCore.Parser, Version=11.2.8.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.ExpressApp.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.Win.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Persistent.Base.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v11.2.Core, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v11.2.Core, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Oracle.DataAccess, Version=10.1.0.400, Culture=neutral, PublicKeyToken=89b483f429c47342">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\oracle\product\10.1.0\Client_1\bin\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\terbilang.vb" />
+    <Compile Include="Class\user.vb" />
+    <Compile Include="Class\modul_my.vb" />
+    <Compile Include="fb_ascon.Designer.vb">
+      <DependentUpon>fb_ascon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fb_ascon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fb_dliver.Designer.vb">
+      <DependentUpon>fb_dliver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fb_dliver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fb_finance.Designer.vb">
+      <DependentUpon>fb_finance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fb_finance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fkalk_gaji.Designer.vb">
+      <DependentUpon>fkalk_gaji.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fkalk_gaji.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fkalk_gaji2.Designer.vb">
+      <DependentUpon>fkalk_gaji2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fkalk_gaji2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\pr_hist_kas.Designer.vb">
+      <DependentUpon>pr_hist_kas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\pr_hist_kas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\pr_jual_beli_detail.Designer.vb">
+      <DependentUpon>pr_jual_beli_detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\pr_jual_beli_detail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\pr_jual_beli_rekap.Designer.vb">
+      <DependentUpon>pr_jual_beli_rekap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\pr_jual_beli_rekap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\pr_kas_out.Designer.vb">
+      <DependentUpon>pr_kas_out.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\pr_kas_out.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\pr_labarugi.Designer.vb">
+      <DependentUpon>pr_labarugi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\pr_labarugi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\pr_pareto.Designer.vb">
+      <DependentUpon>pr_pareto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\pr_pareto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\pr_track.Designer.vb">
+      <DependentUpon>pr_track.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\pr_track.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\r_hist_kas.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>r_hist_kas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\r_kas_out.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>r_kas_out.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\r_labarugi_tot.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>r_labarugi_tot.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\r_pareto.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>r_pareto.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\r_selisih_detail.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>r_selisih_detail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\r_selisih_rekap_kab.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>r_selisih_rekap_kab.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\r_labarugi_bln.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>r_labarugi_bln.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\r_track.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>r_track.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_bbr_inv.Designer.vb">
+      <DependentUpon>fsl_bbr_inv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_bbr_inv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_byar_toko.Designer.vb">
+      <DependentUpon>fsl_byar_toko.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_byar_toko.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_do_pending.Designer.vb">
+      <DependentUpon>fsl_do_pending.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_do_pending.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_gaji_angk.Designer.vb">
+      <DependentUpon>fsl_gaji_angk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_gaji_angk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_gaji_sal_detail.Designer.vb">
+      <DependentUpon>fsl_gaji_sal_detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_gaji_sal_detail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_gaji_semen.Designer.vb">
+      <DependentUpon>fsl_gaji_semen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_gaji_semen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_gaji_supir.Designer.vb">
+      <DependentUpon>fsl_gaji_supir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_gaji_supir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_ganti_spare.Designer.vb">
+      <DependentUpon>fsl_ganti_spare.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_ganti_spare.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_hist_kas.Designer.vb">
+      <DependentUpon>fsl_hist_kas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_hist_kas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_hist_ksbon_supir.Designer.vb">
+      <DependentUpon>fsl_hist_ksbon_supir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_hist_ksbon_supir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_hist_spare.Designer.vb">
+      <DependentUpon>fsl_hist_spare.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_hist_spare.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_hutang_supir.Designer.vb">
+      <DependentUpon>fsl_hutang_supir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_hutang_supir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_kas_out.Designer.vb">
+      <DependentUpon>fsl_kas_out.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_kas_out.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_kso_detail.Designer.vb">
+      <DependentUpon>fsl_kso_detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_kso_detail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_labarugi.Designer.vb">
+      <DependentUpon>fsl_labarugi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_labarugi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_pareto.Designer.vb">
+      <DependentUpon>fsl_pareto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_pareto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_rekap_dep_princ.Designer.vb">
+      <DependentUpon>fsl_rekap_dep_princ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_rekap_dep_princ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_rkap.Designer.vb">
+      <DependentUpon>fsl_rkap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_rkap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fuser.Designer.vb">
+      <DependentUpon>fuser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fuser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fuser_detail.Designer.vb">
+      <DependentUpon>fuser_detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fuser_detail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_akun.Designer.vb">
+      <DependentUpon>ms_akun.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_akun.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_akun2.Designer.vb">
+      <DependentUpon>ms_akun2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_akun2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_area.Designer.vb">
+      <DependentUpon>ms_area.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_area.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_area2.Designer.vb">
+      <DependentUpon>ms_area2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_area2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_barang.Designer.vb">
+      <DependentUpon>ms_barang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_barang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_barang2.Designer.vb">
+      <DependentUpon>ms_barang2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_barang2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_barang3.Designer.vb">
+      <DependentUpon>ms_barang3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_barang3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_giro.Designer.vb">
+      <DependentUpon>ms_giro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_giro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_giro2.Designer.vb">
+      <DependentUpon>ms_giro2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_giro2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_kab.Designer.vb">
+      <DependentUpon>ms_kab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_kab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_kab2.Designer.vb">
+      <DependentUpon>ms_kab2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_kab2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_kas.Designer.vb">
+      <DependentUpon>ms_kas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_kas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_kas2.Designer.vb">
+      <DependentUpon>ms_kas2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_kas2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_kec.Designer.vb">
+      <DependentUpon>ms_kec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_kec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_kec2.Designer.vb">
+      <DependentUpon>ms_kec2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_kec2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_kend.Designer.vb">
+      <DependentUpon>ms_kend.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_kend.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_kend2.Designer.vb">
+      <DependentUpon>ms_kend2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_kend2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_kso.Designer.vb">
+      <DependentUpon>ms_kso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_kso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_kso2.Designer.vb">
+      <DependentUpon>ms_kso2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_kso2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_prc.Designer.vb">
+      <DependentUpon>ms_prc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_prc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_prc2.Designer.vb">
+      <DependentUpon>ms_prc2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_prc2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_prop.Designer.vb">
+      <DependentUpon>ms_prop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_prop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_prop2.Designer.vb">
+      <DependentUpon>ms_prop2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_prop2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_sales.Designer.vb">
+      <DependentUpon>ms_sales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_sales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_sales2.Designer.vb">
+      <DependentUpon>ms_sales2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_sales2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_sparepart.Designer.vb">
+      <DependentUpon>ms_sparepart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_sparepart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_sparepart2.Designer.vb">
+      <DependentUpon>ms_sparepart2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_sparepart2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_supir2.Designer.vb">
+      <DependentUpon>ms_supir2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_supir2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_toko.Designer.vb">
+      <DependentUpon>ms_toko.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_toko.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_toko2.Designer.vb">
+      <DependentUpon>ms_toko2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_toko2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MDIParent1.Designer.vb">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MDIParent1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Class\classmy.vb" />
+    <Compile Include="Preview\pr_byar_toko.Designer.vb">
+      <DependentUpon>pr_byar_toko.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\pr_byar_toko.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\pr_dep_princp.Designer.vb">
+      <DependentUpon>pr_dep_princp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\pr_dep_princp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\pr_do_pending.Designer.vb">
+      <DependentUpon>pr_do_pending.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\pr_do_pending.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\pr_gaji_aktl.Designer.vb">
+      <DependentUpon>pr_gaji_aktl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\pr_gaji_aktl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\pr_gaji_sal_detail.Designer.vb">
+      <DependentUpon>pr_gaji_sal_detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\pr_gaji_sal_detail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\pr_gaji_sal_tot.Designer.vb">
+      <DependentUpon>pr_gaji_sal_tot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\pr_gaji_sal_tot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\pr_gaji_semen.Designer.vb">
+      <DependentUpon>pr_gaji_semen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\pr_gaji_semen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\pr_gaji_spir.Designer.vb">
+      <DependentUpon>pr_gaji_spir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\pr_gaji_spir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\pr_ganti_spare.Designer.vb">
+      <DependentUpon>pr_ganti_spare.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\pr_ganti_spare.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\pr_hist_spare.Designer.vb">
+      <DependentUpon>pr_hist_spare.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\pr_hist_spare.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\pr_hist_ksbon_supir.Designer.vb">
+      <DependentUpon>pr_hist_ksbon_supir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\pr_hist_ksbon_supir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\pr_hutang_supir.Designer.vb">
+      <DependentUpon>pr_hutang_supir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\pr_hutang_supir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\pr_inv.Designer.vb">
+      <DependentUpon>pr_inv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\pr_inv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\pr_kso_detail.Designer.vb">
+      <DependentUpon>pr_kso_detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\pr_kso_detail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\pr_rekap_dep_princ.Designer.vb">
+      <DependentUpon>pr_rekap_dep_princ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\pr_rekap_dep_princ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\pr_rekap_kso.Designer.vb">
+      <DependentUpon>pr_rekap_kso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\pr_rekap_kso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\pr_rkap_order.Designer.vb">
+      <DependentUpon>pr_rkap_order.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\pr_rkap_order.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rbah_pwd.Designer.vb">
+      <DependentUpon>rbah_pwd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rbah_pwd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\r_byar_toko.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>r_byar_toko.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\r_dep_princ.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>r_dep_princ.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\r_det_gaji_angkutl.vb">
+      <DependentUpon>r_det_gaji_angkutl.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\r_det_gaji_semen.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>r_det_gaji_semen.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\r_do_pending.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>r_do_pending.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\r_gaji.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>r_gaji.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\r_gaji_sales_det.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>r_gaji_sales_det.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\r_gaji_sales_tot.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>r_gaji_sales_tot.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\r_ganti_spare.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>r_ganti_spare.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\r_hist_kasbon.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>r_hist_kasbon.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Report\r_hist_spare.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>r_hist_spare.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\r_hutang_supir.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>r_hutang_supir.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\r_invoice.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>r_invoice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\r_kso_detail.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>r_kso_detail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\r_kso_total.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>r_kso_total.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\r_rekap_deposit_princ.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>r_rekap_deposit_princ.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\r_rkap_order.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>r_rkap_order.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_selisih_rekap.Designer.vb">
+      <DependentUpon>fsl_selisih_rekap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_selisih_rekap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_track.Designer.vb">
+      <DependentUpon>fsl_track.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seleksi Report\fsl_track.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sr_angk_lain.Designer.vb">
+      <DependentUpon>sr_angk_lain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sr_angk_lain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sr_giro.Designer.vb">
+      <DependentUpon>sr_giro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sr_giro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sr_kab.Designer.vb">
+      <DependentUpon>sr_kab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sr_kab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sr_kec.Designer.vb">
+      <DependentUpon>sr_kec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sr_kec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sr_kso.Designer.vb">
+      <DependentUpon>sr_kso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sr_kso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sr_pre_release.Designer.vb">
+      <DependentUpon>sr_pre_release.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sr_pre_release.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sr_pre_ujlan.Designer.vb">
+      <DependentUpon>sr_pre_ujlan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sr_pre_ujlan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sr_real.Designer.vb">
+      <DependentUpon>sr_real.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sr_real.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sr_sales.Designer.vb">
+      <DependentUpon>sr_sales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sr_sales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sr_toko.Designer.vb">
+      <DependentUpon>sr_toko.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sr_toko.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_supir.Designer.vb">
+      <DependentUpon>s_supir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="s_supir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_angkut.Designer.vb">
+      <DependentUpon>tr_angkut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_angkut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_angkut2.Designer.vb">
+      <DependentUpon>tr_angkut2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_angkut2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_byartoko.Designer.vb">
+      <DependentUpon>tr_byartoko.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_byartoko.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_byartoko2.Designer.vb">
+      <DependentUpon>tr_byartoko2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_byartoko2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_byartoko3.Designer.vb">
+      <DependentUpon>tr_byartoko3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_byartoko3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_deposit_princ.Designer.vb">
+      <DependentUpon>tr_deposit_princ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_deposit_princ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_deposit_princ2.Designer.vb">
+      <DependentUpon>tr_deposit_princ2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_deposit_princ2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_deposit_toko.Designer.vb">
+      <DependentUpon>tr_deposit_toko.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_deposit_toko.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_deposit_toko2.Designer.vb">
+      <DependentUpon>tr_deposit_toko2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_deposit_toko2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_eks.Designer.vb">
+      <DependentUpon>tr_eks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_eks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_giro_cair.Designer.vb">
+      <DependentUpon>tr_giro_cair.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_giro_cair.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_giro_cair2.Designer.vb">
+      <DependentUpon>tr_giro_cair2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_giro_cair2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_hist_user.Designer.vb">
+      <DependentUpon>tr_hist_user.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_hist_user.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_imp.Designer.vb">
+      <DependentUpon>tr_imp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_imp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_inv.Designer.vb">
+      <DependentUpon>tr_inv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_inv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_inv2.Designer.vb">
+      <DependentUpon>tr_inv2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_inv2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_inv3.Designer.vb">
+      <DependentUpon>tr_inv3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_inv3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_kalk_rugilab.Designer.vb">
+      <DependentUpon>tr_kalk_rugilab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_kalk_rugilab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_kasbon.Designer.vb">
+      <DependentUpon>tr_kasbon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_kasbon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_kasbon2.Designer.vb">
+      <DependentUpon>tr_kasbon2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_kasbon2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_kas_in.Designer.vb">
+      <DependentUpon>tr_kas_in.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_kas_in.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_kas_in2.Designer.vb">
+      <DependentUpon>tr_kas_in2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_kas_in2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_kas_out.Designer.vb">
+      <DependentUpon>tr_kas_out.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_kas_out.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_kas_out2.Designer.vb">
+      <DependentUpon>tr_kas_out2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_kas_out2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_kas_out3.Designer.vb">
+      <DependentUpon>tr_kas_out3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_kas_out3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_pre.Designer.vb">
+      <DependentUpon>tr_pre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_pre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_pre2.Designer.vb">
+      <DependentUpon>tr_pre2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_pre2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_pre3.Designer.vb">
+      <DependentUpon>tr_pre3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_pre3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_real.Designer.vb">
+      <DependentUpon>tr_real.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_real.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_real2.Designer.vb">
+      <DependentUpon>tr_real2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_real2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_real3.Designer.vb">
+      <DependentUpon>tr_real3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_real3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_spare_in.Designer.vb">
+      <DependentUpon>tr_spare_in.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_spare_in.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_spare_in2.Designer.vb">
+      <DependentUpon>tr_spare_in2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_spare_in2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_spare_out.Designer.vb">
+      <DependentUpon>tr_spare_out.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_spare_out.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_uangjlan.Designer.vb">
+      <DependentUpon>tr_uangjlan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_uangjlan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_uangjlan_l.Designer.vb">
+      <DependentUpon>tr_uangjlan_l.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_uangjlan_l.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_uangjlan_l2.Designer.vb">
+      <DependentUpon>tr_uangjlan_l2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_uangjlan_l2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tr_uangjln2.Designer.vb">
+      <DependentUpon>tr_uangjln2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tr_uangjln2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="t_spare_out2.Designer.vb">
+      <DependentUpon>t_spare_out2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="t_spare_out2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="t_spare_out3.Designer.vb">
+      <DependentUpon>t_spare_out3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="t_spare_out3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="utama2.Designer.vb">
+      <DependentUpon>utama2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="utama2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="utl_pen_program.Designer.vb">
+      <DependentUpon>utl_pen_program.vb</DependentUpon>
+    </Compile>
+    <Compile Include="utl_pen_program.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="waitf.Designer.vb">
+      <DependentUpon>waitf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="waitf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ms_supir.Designer.vb">
+      <DependentUpon>ms_supir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ms_supir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="fb_ascon.resx">
+      <DependentUpon>fb_ascon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fb_dliver.resx">
+      <DependentUpon>fb_dliver.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fb_finance.resx">
+      <DependentUpon>fb_finance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fkalk_gaji.resx">
+      <DependentUpon>fkalk_gaji.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fkalk_gaji2.resx">
+      <DependentUpon>fkalk_gaji2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\pr_hist_kas.resx">
+      <DependentUpon>pr_hist_kas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\pr_jual_beli_detail.resx">
+      <DependentUpon>pr_jual_beli_detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\pr_jual_beli_rekap.resx">
+      <DependentUpon>pr_jual_beli_rekap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\pr_kas_out.resx">
+      <DependentUpon>pr_kas_out.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\pr_labarugi.resx">
+      <DependentUpon>pr_labarugi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\pr_pareto.resx">
+      <DependentUpon>pr_pareto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\pr_track.resx">
+      <DependentUpon>pr_track.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_hist_kas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>r_hist_kas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_kas_out.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>r_kas_out.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_labarugi_tot.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>r_labarugi_tot.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_pareto.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>r_pareto.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_selisih_detail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>r_selisih_detail.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_selisih_rekap_kab.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>r_selisih_rekap_kab.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_labarugi_bln.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>r_labarugi_bln.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_track.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>r_track.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seleksi Report\fsl_bbr_inv.resx">
+      <DependentUpon>fsl_bbr_inv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seleksi Report\fsl_byar_toko.resx">
+      <DependentUpon>fsl_byar_toko.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seleksi Report\fsl_do_pending.resx">
+      <DependentUpon>fsl_do_pending.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seleksi Report\fsl_gaji_angk.resx">
+      <DependentUpon>fsl_gaji_angk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seleksi Report\fsl_gaji_sal_detail.resx">
+      <DependentUpon>fsl_gaji_sal_detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seleksi Report\fsl_gaji_semen.resx">
+      <DependentUpon>fsl_gaji_semen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seleksi Report\fsl_gaji_supir.resx">
+      <DependentUpon>fsl_gaji_supir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seleksi Report\fsl_ganti_spare.resx">
+      <DependentUpon>fsl_ganti_spare.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seleksi Report\fsl_hist_kas.resx">
+      <DependentUpon>fsl_hist_kas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seleksi Report\fsl_hist_ksbon_supir.resx">
+      <DependentUpon>fsl_hist_ksbon_supir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seleksi Report\fsl_hist_spare.resx">
+      <DependentUpon>fsl_hist_spare.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seleksi Report\fsl_hutang_supir.resx">
+      <DependentUpon>fsl_hutang_supir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seleksi Report\fsl_kas_out.resx">
+      <DependentUpon>fsl_kas_out.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seleksi Report\fsl_kso_detail.resx">
+      <DependentUpon>fsl_kso_detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seleksi Report\fsl_labarugi.resx">
+      <DependentUpon>fsl_labarugi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seleksi Report\fsl_pareto.resx">
+      <DependentUpon>fsl_pareto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seleksi Report\fsl_rekap_dep_princ.resx">
+      <DependentUpon>fsl_rekap_dep_princ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seleksi Report\fsl_rkap.resx">
+      <DependentUpon>fsl_rkap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fuser.resx">
+      <DependentUpon>fuser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fuser_detail.resx">
+      <DependentUpon>fuser_detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_akun.resx">
+      <DependentUpon>ms_akun.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_akun2.resx">
+      <DependentUpon>ms_akun2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_area.resx">
+      <DependentUpon>ms_area.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_area2.resx">
+      <DependentUpon>ms_area2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_barang.resx">
+      <DependentUpon>ms_barang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_barang2.resx">
+      <DependentUpon>ms_barang2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_barang3.resx">
+      <DependentUpon>ms_barang3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_giro.resx">
+      <DependentUpon>ms_giro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_giro2.resx">
+      <DependentUpon>ms_giro2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_kab.resx">
+      <DependentUpon>ms_kab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_kab2.resx">
+      <DependentUpon>ms_kab2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_kas.resx">
+      <DependentUpon>ms_kas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_kas2.resx">
+      <DependentUpon>ms_kas2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_kec.resx">
+      <DependentUpon>ms_kec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_kec2.resx">
+      <DependentUpon>ms_kec2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_kend.resx">
+      <DependentUpon>ms_kend.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_kend2.resx">
+      <DependentUpon>ms_kend2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_kso.resx">
+      <DependentUpon>ms_kso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_kso2.resx">
+      <DependentUpon>ms_kso2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_prc.resx">
+      <DependentUpon>ms_prc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_prc2.resx">
+      <DependentUpon>ms_prc2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_prop.resx">
+      <DependentUpon>ms_prop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_prop2.resx">
+      <DependentUpon>ms_prop2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_sales.resx">
+      <DependentUpon>ms_sales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_sales2.resx">
+      <DependentUpon>ms_sales2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_sparepart.resx">
+      <DependentUpon>ms_sparepart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_sparepart2.resx">
+      <DependentUpon>ms_sparepart2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_supir.resx">
+      <DependentUpon>ms_supir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_supir2.resx">
+      <DependentUpon>ms_supir2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_toko.resx">
+      <DependentUpon>ms_toko.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ms_toko2.resx">
+      <DependentUpon>ms_toko2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\MDIParent1.resx">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\pr_byar_toko.resx">
+      <DependentUpon>pr_byar_toko.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\pr_dep_princp.resx">
+      <DependentUpon>pr_dep_princp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\pr_do_pending.resx">
+      <DependentUpon>pr_do_pending.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\pr_gaji_aktl.resx">
+      <DependentUpon>pr_gaji_aktl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\pr_gaji_sal_detail.resx">
+      <DependentUpon>pr_gaji_sal_detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\pr_gaji_sal_tot.resx">
+      <DependentUpon>pr_gaji_sal_tot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\pr_gaji_semen.resx">
+      <DependentUpon>pr_gaji_semen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\pr_gaji_spir.resx">
+      <DependentUpon>pr_gaji_spir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\pr_ganti_spare.resx">
+      <DependentUpon>pr_ganti_spare.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\pr_hist_ksbon_supir.resx">
+      <DependentUpon>pr_hist_ksbon_supir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\pr_hist_spare.resx">
+      <DependentUpon>pr_hist_spare.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\pr_hutang_supir.resx">
+      <DependentUpon>pr_hutang_supir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\pr_inv.resx">
+      <DependentUpon>pr_inv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\pr_kso_detail.resx">
+      <DependentUpon>pr_kso_detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\pr_rekap_dep_princ.resx">
+      <DependentUpon>pr_rekap_dep_princ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\pr_rekap_kso.resx">
+      <DependentUpon>pr_rekap_kso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\pr_rkap_order.resx">
+      <DependentUpon>pr_rkap_order.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rbah_pwd.resx">
+      <DependentUpon>rbah_pwd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_byar_toko.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>r_byar_toko.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_dep_princ.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>r_dep_princ.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_det_gaji_angkutl.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>r_det_gaji_angkutl.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_det_gaji_semen.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>r_det_gaji_semen.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_do_pending.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>r_do_pending.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_gaji.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>r_gaji.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_gaji_sales_det.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>r_gaji_sales_det.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_gaji_sales_tot.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>r_gaji_sales_tot.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_ganti_spare.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>r_ganti_spare.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_hist_kasbon.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>r_hist_kasbon.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_hist_spare.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>r_hist_spare.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_hutang_supir.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>r_hutang_supir.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_invoice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>r_invoice.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_kso_detail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>r_kso_detail.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_kso_total.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>r_kso_total.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_rekap_deposit_princ.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>r_rekap_deposit_princ.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\r_rkap_order.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>r_rkap_order.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seleksi Report\fsl_selisih_rekap.resx">
+      <DependentUpon>fsl_selisih_rekap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seleksi Report\fsl_track.resx">
+      <DependentUpon>fsl_track.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sr_angk_lain.resx">
+      <DependentUpon>sr_angk_lain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sr_giro.resx">
+      <DependentUpon>sr_giro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sr_kab.resx">
+      <DependentUpon>sr_kab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sr_kec.resx">
+      <DependentUpon>sr_kec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sr_kso.resx">
+      <DependentUpon>sr_kso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sr_pre_release.resx">
+      <DependentUpon>sr_pre_release.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sr_pre_ujlan.resx">
+      <DependentUpon>sr_pre_ujlan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sr_real.resx">
+      <DependentUpon>sr_real.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sr_sales.resx">
+      <DependentUpon>sr_sales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sr_toko.resx">
+      <DependentUpon>sr_toko.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_supir.resx">
+      <DependentUpon>s_supir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_angkut.resx">
+      <DependentUpon>tr_angkut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_angkut2.resx">
+      <DependentUpon>tr_angkut2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_byartoko.resx">
+      <DependentUpon>tr_byartoko.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_byartoko2.resx">
+      <DependentUpon>tr_byartoko2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_byartoko3.resx">
+      <DependentUpon>tr_byartoko3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_deposit_princ.resx">
+      <DependentUpon>tr_deposit_princ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_deposit_princ2.resx">
+      <DependentUpon>tr_deposit_princ2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_deposit_toko.resx">
+      <DependentUpon>tr_deposit_toko.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_deposit_toko2.resx">
+      <DependentUpon>tr_deposit_toko2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_eks.resx">
+      <DependentUpon>tr_eks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_giro_cair.resx">
+      <DependentUpon>tr_giro_cair.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_giro_cair2.resx">
+      <DependentUpon>tr_giro_cair2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_hist_user.resx">
+      <DependentUpon>tr_hist_user.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_imp.resx">
+      <DependentUpon>tr_imp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_inv.resx">
+      <DependentUpon>tr_inv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_inv2.resx">
+      <DependentUpon>tr_inv2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_inv3.resx">
+      <DependentUpon>tr_inv3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_kalk_rugilab.resx">
+      <DependentUpon>tr_kalk_rugilab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_kasbon.resx">
+      <DependentUpon>tr_kasbon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_kasbon2.resx">
+      <DependentUpon>tr_kasbon2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_kas_in.resx">
+      <DependentUpon>tr_kas_in.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_kas_in2.resx">
+      <DependentUpon>tr_kas_in2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_kas_out.resx">
+      <DependentUpon>tr_kas_out.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_kas_out2.resx">
+      <DependentUpon>tr_kas_out2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_kas_out3.resx">
+      <DependentUpon>tr_kas_out3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_pre.resx">
+      <DependentUpon>tr_pre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_pre2.resx">
+      <DependentUpon>tr_pre2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_pre3.resx">
+      <DependentUpon>tr_pre3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_real.resx">
+      <DependentUpon>tr_real.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_real2.resx">
+      <DependentUpon>tr_real2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_real3.resx">
+      <DependentUpon>tr_real3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_spare_in.resx">
+      <DependentUpon>tr_spare_in.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_spare_in2.resx">
+      <DependentUpon>tr_spare_in2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_spare_out.resx">
+      <DependentUpon>tr_spare_out.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_uangjlan.resx">
+      <DependentUpon>tr_uangjlan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_uangjlan_l.resx">
+      <DependentUpon>tr_uangjlan_l.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_uangjlan_l2.resx">
+      <DependentUpon>tr_uangjlan_l2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tr_uangjln2.resx">
+      <DependentUpon>tr_uangjln2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="t_spare_out2.resx">
+      <DependentUpon>t_spare_out2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="t_spare_out3.resx">
+      <DependentUpon>t_spare_out3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="utama2.resx">
+      <DependentUpon>utama2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="utl_pen_program.resx">
+      <DependentUpon>utl_pen_program.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="waitf.resx">
+      <DependentUpon>waitf.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gfserrortogroove.ico" />
+    <Content Include="tes.ico" />
+    <Content Include="XpoTutorials.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
